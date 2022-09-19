@@ -22,7 +22,7 @@
         <form action="/posts/{{ $post->id }}" id="form_delete" method="post">
             @csrf
             @method('DELETE')
-            <input type="submit" style="display:inline">
+            <input type="submit" style="display:inline" value="削除">
             <p class="delete">[<span onclick="return deletePost(this);">delete</span>]</p>
         </form>
         <div class="footer">
